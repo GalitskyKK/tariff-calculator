@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { CurrencyProvider } from './context/CurrencyContext';
+import TariffCalculator from './components/TariffCalculator';
+import './App.scss';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CurrencyProvider>
+      <div className="App">
+        <h1>Тарифный калькулятор</h1>
+        <TariffCalculator />
+      </div>
+    </CurrencyProvider>
   );
-}
+};
 
 export default App;

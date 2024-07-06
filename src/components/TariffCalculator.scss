@@ -1,0 +1,11 @@
+.tariff-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.currency-selector,
+.period-selector,
+.result-display {
+  margin-bottom: 20px;
+}

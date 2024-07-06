@@ -1,0 +1,37 @@
+.tariff-selector {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tariff-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.tariff-card input[type="radio"] {
+  display: none;
+}
+
+.tariff-card label {
+  display: block;
+}
+
+.tariff-card h3 {
+  margin: 10px 0;
+}
+
+.tariff-card p {
+  margin: 5px 0;
+}
+
+.tariff-card input[type="radio"]:checked + label {
+  border: 2px solid #007bff;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+}
